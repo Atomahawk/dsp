@@ -34,7 +34,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls`  - lists files in directory
+> > `ls -a`  - lists all files, including hidden files
+> > `ls -l`  - lists all files in long form
+> > `ls -lh`  - lists files in long form using unit suffixes
+> > `ls -lah`  - lists all files (including hidden files) in long form using unit suffixes
+> > `ls -t`  - lists files, sorted by time modified
+> > `ls -Glp` -lists files in long form, colorized, with '/' after each directory
 
 ---
 
