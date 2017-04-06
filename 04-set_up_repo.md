@@ -2,6 +2,8 @@
 
 Before you start, please take 15 minutes to [Try Git](https://try.github.io/levels/1/challenges/1). It does a great job at explaining the basic concepts, which we will be using for this part of the pre-work. 
 
+[Andrew's in-depth resource guide](https://docs.google.com/document/d/1VmmKHz5gOdYnDziIevflwQrStl2-26GNl4FL402jl6o/edit#)
+
 ## Step 1: Sign up for GitHub
 
 You will need a GitHub account.
