@@ -49,9 +49,9 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehensions are a faster, simpler way to create lists (as opposed to for loops).
 
-`evens = [x*2 for x in range(0,50)]
+`evens = [x*2 for x in range(0,50)]`
 
-byfives = [x*5 for x in range(0,50)]`
+`byfives = [x*5 for x in range(0,50)]`
 
 >> `map` and `filter` can return list objects like list comprehension. In building the list, `map` loops a function over a given range. Similar to maps, `filter` builds the list by adding the subsets of a range for which a boolean returned true.
 
