@@ -1,7 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
@@ -18,7 +17,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        print('Number of donuts:' + str(count))
+    else:
+        print('Number of donuts: many')
 
 
 def both_ends(s):
@@ -37,7 +39,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return('')
+    else:
+        return(s[:2]+s[-2:])
 
 
 def fix_start(s):
@@ -56,7 +61,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    char1 = s[0]
+    for i in s[1:]:
+        if i == s[0]:
+            char1 = char1 + '*'
+        else:
+            char1 = char1 + i
+    return char1
 
 
 def mix_up(a, b):
@@ -74,7 +85,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return(b[:2] + a[2:] +' '+ a[:2] + b[2:])
+
 
 
 def verbing(s):
@@ -91,8 +103,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
-
+    if len(s) >= 3:
+        if s[-3:] != 'ing':
+            return(s + 'ing')
+        else:
+            return(s + 'ly')
+    else:
+        return(s)
 
 def not_bad(s):
     """
@@ -111,8 +128,13 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
+    not_position = s.find('not')
+    bad_position = s.find('bad')
+    if bad_position > not_position:
+        result = s.replace(s[not_position:(bad_position + 3)], 'good')
+    else:
+        result = s
+    return result
 
 def front_back(a, b):
     """
@@ -130,4 +152,16 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    half_a = int(len(a)//2)
+    if len(a) % 2 != 0:
+        half_a += 1
+    a_front = a[:half_a]
+    a_back = a[half_a:]
+    
+    half_b = int(len(b)//2)
+    if len(b) % 2 != 0:
+        half_b += 1
+    b_front = b[:half_b]
+    b_back = b[half_b:]
+
+    return a_front + b_front + a_back + b_back
