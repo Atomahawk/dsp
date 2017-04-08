@@ -1,6 +1,6 @@
 # Hint:  use Google to find python function
 
-from datetime import datetime
+from datetime import datetimegi
 
 ####a) 
 date_start = '01-02-2013'
@@ -11,7 +11,7 @@ t1 = datetime.strptime(date_stop, '%m-%d-%Y')
 
 time_diff_a = t1 - t0
 time_diff_a.days
-# 907
+# 937
 
 ####b)  
 date_start = '12312013'
