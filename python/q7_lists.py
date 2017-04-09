@@ -15,7 +15,11 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count = 0
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
+            count += 1
+    return count
 
 
 def front_x(words):
@@ -32,7 +36,17 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    x_words = []
+    others = []
+    for word in words:
+        if word[0] == 'x':
+            x_words.append(word)
+        else:
+            others.append(word)
+    x_sorted = sorted(x_words)
+    others_sorted = sorted(others)
+    x_front_list = x_sorted + others_sorted
+    return x_front_list
 
 
 def sort_last(tuples):
@@ -49,7 +63,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    return sorted(tuples, key = lambda x: x[-1])
 
 
 def remove_adjacent(nums):
@@ -68,7 +82,15 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    rm_adj = []
+    rm_adj.append(nums[0])
+    for i in range(nums[1:]):
+        if nums[i] != rm_adj[i-1]:
+            rm_adj.append(nums[i])
+    return rm_adj
+
+    # can't quite get this one to work...
+    # TypeError: 'list' object cannot be interpreted as an integer
 
 
 def linear_merge(list1, list2):
@@ -85,4 +107,6 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    merged = list1 + list2
+    merged.sort()
+    return merged
