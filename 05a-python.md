@@ -59,7 +59,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 ### Complete the following problems by editing the files below:
 
-### Q5. Datetime
+### Q5. Datetime - done
 Use Python to compute days between start and stop date.   
 a.  
 
@@ -90,18 +90,18 @@ Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
 ---
 
-### Q6. Strings
+### Q6. Strings - done
 Edit the 7 functions in [q6_strings.py](python/q6_strings.py)
 
 ---
 
-### Q7. Lists
+### Q7. Lists - done (but will revisit for the 4th)
 Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
 
 ---
 
-### Q8. Parsing
-Edit the 3 functions in [q8_parsing.py](python/q8_parsing.py)
+### Q8. Parsing - done
+Edit the function in [q8_parsing.py](python/q8_parsing.py)
 
 
 
