@@ -36,9 +36,8 @@ Review the Jupyter Notebook [`1_pandas_jeopardy_example.ipynb`](python/pandas/1_
 
 >### Part 2:  Try Pandas 
 * Open the Jupyter Notebook [`2_pandas_olive_questions.ipynb`](python/pandas/2_pandas_olive_questions.ipynb) which uses the `olive.csv` data.
-* Make a copy of the notebook and name it `3_pandas_olive_answers_myname.ipynb`.  (Example:  my notebook would be called `3_pandas_olive_answers_reshama.ipynb`).
-* Update the header at the top by adding in your name and date.
-* Edit this notebook and complete the exercises.
+* Made a copy of the notebook:  [`3_pandas_olive_answers_myname.ipynb`](https://github.com/Atomahawk/dsp/blob/master/python/pandas/3_pandas_olive_answers_andrew.ipynb). 
+* Edited this notebook and completed the exercises.
 
 ---
 
